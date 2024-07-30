@@ -20,10 +20,11 @@ def setup_logging(debug=False):
     logger = logging.getLogger()
     return logger
 
-def get_qradar_metrics(logger):
+def get_qradar_metrics(logger, mbean_query=None):
     """
     Fetch and display metrics from the QRadar API endpoint '/api/health/metrics/qradar_metrics'.
     :param logger: Logger instance for logging information.
+    :param mbean_query: Optional string to filter metrics by MBean name.
     """
     # Ensure config is read
     config = qradarzoldaxlib.read_config()
@@ -56,6 +57,11 @@ def get_qradar_metrics(logger):
                     time_resolution = metric.get('time_resolution', 'N/A')
                     component_name = metric.get('component_name', 'N/A')
                     enabled = metric.get('enabled', 'N/A')
+
+                    # Filter by MBean name if query is specified and metric_id is not None
+                    if mbean_query and metric_id and mbean_query not in metric_id:
+                        continue
+
                     print(f"Component Type: {component_type}, Metric ID: {metric_id}, "
                           f"Time Resolution: {time_resolution}, Component Name: {component_name}, Enabled: {enabled}")
             except ValueError as e:
@@ -70,11 +76,12 @@ if __name__ == "__main__":
     # Argument parser for command-line options
     parser = argparse.ArgumentParser(description="Fetch QRadar metrics data.")
     parser.add_argument('--debug', action='store_true', help="Enable debug logging")
+    parser.add_argument('--querymbean', type=str, help="Filter metrics by MBean name")
     args = parser.parse_args()
 
     # Set up logging based on the debug parameter
     logger = setup_logging(debug=args.debug)
 
     # Fetch and display QRadar metrics
-    get_qradar_metrics(logger)
+    get_qradar_metrics(logger, mbean_query=args.querymbean)
 
