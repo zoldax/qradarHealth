@@ -103,11 +103,3 @@ This project is licensed under the Apache2 License. See the [LICENSE](LICENSE) f
 This script is provided "as is" without any warranty of any kind. Abakus Sécurité is not responsible for any damage or data loss that may occur from using this script. Use it at your own risk.
 
 
-## Author
-
-[Your Name](https://github.com/your-github-username)
-
-``````
-
-This version of the README.md file uses ````` instead of the usual code block syntax.
-
