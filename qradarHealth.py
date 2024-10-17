@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-QRadar Metrics Fetcher
+QRadar Metrics Fetcher (QRadarHealth)
 
  Copyright 2024 Pascal Weber (zoldax) / Abakus Sécurité
 

@@ -1,7 +1,7 @@
-# QRadar Metrics Fetcher
+# QRadar Metrics Fetcher (QRadarHealth)
 
 This Python script fetches and displays metrics from the QRadar API endpoint `/api/health/metrics/qradar_metrics`. It connects to a QRadar instance, retrieves health metrics, and optionally filters them based on a provided MBean name.
-This script is a draft designed to retrieve additional metric information via the API for monitoring purposes, complementing the data available through SNMP
+This script is a draft designed to retrieve additional metric information via the API for monitoring purposes, complementing the data available through SNMP.
 
 ## Features
 
