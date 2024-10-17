@@ -3,6 +3,10 @@
 This Python script fetches and displays metrics from the QRadar API endpoint `/api/health/metrics/qradar_metrics`. It connects to a QRadar instance, retrieves health metrics, and optionally filters them based on a provided MBean name.
 This script is a draft designed to retrieve additional metric information via the API for monitoring purposes, complementing the data available through SNMP.
 
+
+[![License](https://img.shields.io/github/license/zoldax/qradarHealth?color=44CC11)](LICENSE)  [![Commit](https://img.shields.io/github/commit-activity/t/zoldax/qradarHealth)](https://github.com/zoldax/qradarHealth/commits/)  [![Views](https://hits.sh/github.com/zoldax/qradarHealth.svg)](https://hits.sh/github.com/zoldax/qradarHealth/) [![Last commit](https://img.shields.io/github/last-commit/zoldax/qradarHealth/main)](https://github.com/zoldax/qradarHealth/commits/main)
+
+
 ## Features
 
 - **Fetch QRadar Metrics**: Retrieve and display health metrics from a QRadar instance via its API.
