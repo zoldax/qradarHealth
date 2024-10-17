@@ -1,6 +1,6 @@
 {
     "ip_QRadar": "qradarlab.zoldax.lan",
-    "auth": "85af61a8-ee54-4bed-b984-bf08d396f5fb",
+    "auth": "your tocken xxxx-xxx-xxx-xx",
     "Version": "15.0",
     "Accept": "application/json",
     "verify_ssl": "False",        
