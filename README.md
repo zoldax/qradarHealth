@@ -98,9 +98,10 @@ All errors are logged to `error.log`.
 
 This project is licensed under the Apache2 License. See the [LICENSE](LICENSE) file for details.
 
-## Contributions
+## Disclaimer
 
-Feel free to contribute to this project by submitting issues or pull requests. All contributions are welcome!
+This script is provided "as is" without any warranty of any kind. Abakus Sécurité is not responsible for any damage or data loss that may occur from using this script. Use it at your own risk.
+
 
 ## Author
 
